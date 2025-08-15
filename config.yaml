@@ -1,0 +1,12 @@
+paths:
+  - chunks/client_chunks.json
+  - chunks/server_chunks.json
+  - chunks/widgets_chunks.json
+vectorstore:
+  path: vectorstore/faiss_index
+  model: all-MiniLM-L6-v2
+llm:
+  model: llama-3.1-8b-instant
+  api_key_env: GROQ_API_KEY
+retrieval:
+  k: 5

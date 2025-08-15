@@ -1,0 +1,2155 @@
+{
+  "chunks": [
+    {
+      "doc_id": "_ae73c22b427f",
+      "title": "Widgets API",
+      "section_id": 1,
+      "heading": "The data processing scheme​",
+      "chunk_index": 0,
+      "chunk_text": "After processing the data by the client script, invoke thes_widget.serverUpdate()method to send the data to the server controller. noteThe client controller uses thes_widgetobject to invokewidget API methods. If you need the widgets to interact with each other, uses_widgetsmethods in your client scripts: Learn about the available widget tags and their attributes, as well as about their usage regarding the agent and portal interface and roles.",
+      "images": []
+    },
+    {
+      "doc_id": "_ae73c22b427f",
+      "title": "Widgets API",
+      "section_id": 1,
+      "heading": "The data processing scheme​",
+      "chunk_index": 1,
+      "chunk_text": "To optimize the widgects performance, use the API directivessimple-if,simple-class,simeple-show, andsimple-style.",
+      "images": []
+    },
+    {
+      "doc_id": "_ae73c22b427f",
+      "title": "Widgets API",
+      "section_id": 1,
+      "heading": "The data processing scheme​",
+      "chunk_index": 2,
+      "chunk_text": "The scheme below illustrates how the data passes between the server and client scripts using global objects:  The server script uses theinputobject to access the data received from the client controller and thedataobject to process and send it back in the JSON format. The client script uses thedataobject to access the server data. The server scriptdataobject automatically overwrites the client controllerdataobject when calling this method.",
+      "images": []
+    },
+    {
+      "doc_id": "_ae73c22b427f",
+      "title": "Widgets API",
+      "section_id": 2,
+      "heading": "Widget interaction​",
+      "chunk_index": 0,
+      "chunk_text": "If you need the widgets to interact with each other, uses_widgetsmethods in your client scripts: Learn about the available widget tags and their attributes, as well as about their usage regarding the agent and portal interface and roles. To optimize the widgects performance, use the API directivessimple-if,simple-class,simeple-show, andsimple-style.",
+      "images": []
+    },
+    {
+      "doc_id": "_ae73c22b427f",
+      "title": "Widgets API",
+      "section_id": 3,
+      "heading": "SimpleTags​",
+      "chunk_index": 0,
+      "chunk_text": "Learn about the available widget tags and their attributes, as well as about their usage regarding the agent and portal interface and roles. To optimize the widgects performance, use the API directivessimple-if,simple-class,simeple-show, andsimple-style.",
+      "images": []
+    },
+    {
+      "doc_id": "_ae73c22b427f",
+      "title": "Widgets API",
+      "section_id": 4,
+      "heading": "API Directives​",
+      "chunk_index": 0,
+      "chunk_text": "To optimize the widgects performance, use the API directivessimple-if,simple-class,simeple-show, andsimple-style.",
+      "images": []
+    },
+    {
+      "doc_id": "_3c2c3998cce8",
+      "title": "SimpleTags",
+      "section_id": 1,
+      "heading": "Common SimpleTags​",
+      "chunk_index": 0,
+      "chunk_text": "Learn how to apply the SimpleTags to add buttons and various types of fields to widgets. Learn how to use SimpleTags to implement portal widgets. General tables with all available tag attributes.",
+      "images": []
+    },
+    {
+      "doc_id": "_3c2c3998cce8",
+      "title": "SimpleTags",
+      "section_id": 2,
+      "heading": "Portal SimpleTags​",
+      "chunk_index": 0,
+      "chunk_text": "Learn how to use SimpleTags to implement portal widgets. General tables with all available tag attributes.",
+      "images": []
+    },
+    {
+      "doc_id": "_3c2c3998cce8",
+      "title": "SimpleTags",
+      "section_id": 3,
+      "heading": "Tag Attributes​",
+      "chunk_index": 0,
+      "chunk_text": "General tables with all available tag attributes.",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 1,
+      "heading": "📄️activityFeed",
+      "chunk_index": 0,
+      "chunk_text": "Enable the Activity Feed on forms and portal pages",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 2,
+      "heading": "📄️attachment",
+      "chunk_index": 0,
+      "chunk_text": "Add a widget for attaching files to a record",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 3,
+      "heading": "📄️button",
+      "chunk_index": 0,
+      "chunk_text": "Add a button to a widget form",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 4,
+      "heading": "📄️checkbox",
+      "chunk_index": 0,
+      "chunk_text": "Add and configure a checkbox field",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 5,
+      "heading": "📄️codemirror",
+      "chunk_index": 0,
+      "chunk_text": "Add a code editor field",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 6,
+      "heading": "📄️conditions",
+      "chunk_index": 0,
+      "chunk_text": "Add a condition builder",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 7,
+      "heading": "📄️date",
+      "chunk_index": 0,
+      "chunk_text": "Add a date input field",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 8,
+      "heading": "📄️datetime",
+      "chunk_index": 0,
+      "chunk_text": "Add a date and time input field",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 9,
+      "heading": "📄️daysofweek",
+      "chunk_index": 0,
+      "chunk_text": "Add a field for selecting the days of the week",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 10,
+      "heading": "📄️duration",
+      "chunk_index": 0,
+      "chunk_text": "Add a field for counting time duration",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 11,
+      "heading": "📄️durationinput",
+      "chunk_index": 0,
+      "chunk_text": "Add a field for inputting a time duration value",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 12,
+      "heading": "📄️Form",
+      "chunk_index": 0,
+      "chunk_text": "Display a record form with specified parameters",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 13,
+      "heading": "📄️hint",
+      "chunk_index": 0,
+      "chunk_text": "Display a hint when moving the pointer over an element",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 14,
+      "heading": "📄️htmlEditor",
+      "chunk_index": 0,
+      "chunk_text": "Add a rich text input field",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 15,
+      "heading": "📄️LabelTag",
+      "chunk_index": 0,
+      "chunk_text": "Place a text label on a widget",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 16,
+      "heading": "📄️list",
+      "chunk_index": 0,
+      "chunk_text": "Add a multi-select reference field",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 17,
+      "heading": "📄️modal",
+      "chunk_index": 0,
+      "chunk_text": "Display a modal window on a page",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 18,
+      "heading": "📄️multiselect",
+      "chunk_index": 0,
+      "chunk_text": "Add multiple-choice options",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 19,
+      "heading": "📄️recordPopup",
+      "chunk_index": 0,
+      "chunk_text": "Customize the popup window for a reference field value",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 20,
+      "heading": "📄️reference",
+      "chunk_index": 0,
+      "chunk_text": "Add a reference field",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 21,
+      "heading": "📄️rem",
+      "chunk_index": 0,
+      "chunk_text": "Add model attributes of an extended record",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 22,
+      "heading": "📄️remform",
+      "chunk_index": 0,
+      "chunk_text": "Add a form with REM attributes",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 23,
+      "heading": "📄️report",
+      "chunk_index": 0,
+      "chunk_text": "Add a widget that displays a report",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 24,
+      "heading": "📄️sectionMessage",
+      "chunk_index": 0,
+      "chunk_text": "Display information in a separate text box",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 25,
+      "heading": "📄️select",
+      "chunk_index": 0,
+      "chunk_text": "Add a single-select field",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 26,
+      "heading": "📄️string",
+      "chunk_index": 0,
+      "chunk_text": "Add a text input field",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 27,
+      "heading": "📄️textarea",
+      "chunk_index": 0,
+      "chunk_text": "Add a multi-line text field",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 28,
+      "heading": "📄️toggle",
+      "chunk_index": 0,
+      "chunk_text": "Add and configure a toggle selector",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 29,
+      "heading": "📄️tooltip",
+      "chunk_index": 0,
+      "chunk_text": "Display a tooltip when clicking an element",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 30,
+      "heading": "📄️wysiwygeditor",
+      "chunk_index": 0,
+      "chunk_text": "Add a text editor",
+      "images": []
+    },
+    {
+      "doc_id": "_a3bcd2a41f90",
+      "title": "Common SimpleTags",
+      "section_id": 31,
+      "heading": "📄️recordList",
+      "chunk_index": 0,
+      "chunk_text": "Configure the list view of a table",
+      "images": []
+    },
+    {
+      "doc_id": "activityfeed_ac5205f51a2c",
+      "title": "activityFeed",
+      "section_id": 1,
+      "heading": "Redefine class styles​",
+      "chunk_index": 0,
+      "chunk_text": "The style of the following classes used in theconfigattribute can be redefined: Example 1config='{\"title\":\"New Title\",\"journal\":\"history, work_notes.task\", \"columns\": \"state, active\"}' Example 2config='{\"isNotStylized\":\"true\"}' Example 3config='{\"isNotStylized\":\"true\", \"classes\": {\"ActivityFeed\": \"newAf\"}}' Example 4config='{\"classes\": {\"ActivityFeed\": \"newAf\"}}'#CSS#.newAf{border-bottom:2px red;background-color:green;}",
+      "images": []
+    },
+    {
+      "doc_id": "form_52152c19e599",
+      "title": "Form",
+      "section_id": 1,
+      "heading": "Structure​",
+      "chunk_index": 0,
+      "chunk_text": "This widget includes the following elements: Form widget elements, such as form elements, can be ofdifferent types. The widget supports functionality of all field types used in forms (such as properties, behavior, scalar type, and others). To create a dynamic form, use the following attributes: Example: Form<Formname=\"leadForm\"tableName=\"crm_leads\"view=\"Modal Form Disqualify\"uiActions=\"false\"userScripts=\"true\"></Form><divclass=\"buttonsModalQualify\"><buttonbuttonType=\"unstyled\"event-click=\"window.s_widget_custom.cancel()\">{data.cancel}</button><buttondisabled=\"{data.isDisabled}\"buttonType=\"primary\"event-click=\"window.s_widget_custom.save()\">{data.save}</button></div> The template above displays the following element on the page:  Use the<IndicatePresence>tag with the<Form>tag to add the presence indication widget to a form. To display the widget, theIndicate presencecheckbox must be selected on the table form (theindicate_presenceattribute istrue). Available attributes: Example: IndicatePresence<IndicatePresencetableName=\"{data.table_name}\"recordId=\"{data.record_id}\"></IndicatePresence> The code above displays the following element on the page:",
+      "images": []
+    },
+    {
+      "doc_id": "form_52152c19e599",
+      "title": "Form",
+      "section_id": 2,
+      "heading": "Elements​",
+      "chunk_index": 0,
+      "chunk_text": "Form widget elements, such as form elements, can be ofdifferent types. The widget supports functionality of all field types used in forms (such as properties, behavior, scalar type, and others). To create a dynamic form, use the following attributes: Example: Form<Formname=\"leadForm\"tableName=\"crm_leads\"view=\"Modal Form Disqualify\"uiActions=\"false\"userScripts=\"true\"></Form><divclass=\"buttonsModalQualify\"><buttonbuttonType=\"unstyled\"event-click=\"window.s_widget_custom.cancel()\">{data.cancel}</button><buttondisabled=\"{data.isDisabled}\"buttonType=\"primary\"event-click=\"window.s_widget_custom.save()\">{data.save}</button></div> The template above displays the following element on the page:  Use the<IndicatePresence>tag with the<Form>tag to add the presence indication widget to a form. To display the widget, theIndicate presencecheckbox must be selected on the table form (theindicate_presenceattribute istrue). Available attributes: Example: IndicatePresence<IndicatePresencetableName=\"{data.table_name}\"recordId=\"{data.record_id}\"></IndicatePresence> The code above displays the following element on the page:",
+      "images": []
+    },
+    {
+      "doc_id": "form_52152c19e599",
+      "title": "Form",
+      "section_id": 3,
+      "heading": "Attributes​",
+      "chunk_index": 0,
+      "chunk_text": "To create a dynamic form, use the following attributes: Example: Form<Formname=\"leadForm\"tableName=\"crm_leads\"view=\"Modal Form Disqualify\"uiActions=\"false\"userScripts=\"true\"></Form><divclass=\"buttonsModalQualify\"><buttonbuttonType=\"unstyled\"event-click=\"window.s_widget_custom.cancel()\">{data.cancel}</button><buttondisabled=\"{data.isDisabled}\"buttonType=\"primary\"event-click=\"window.s_widget_custom.save()\">{data.save}</button></div> The template above displays the following element on the page:  Use the<IndicatePresence>tag with the<Form>tag to add the presence indication widget to a form. To display the widget, theIndicate presencecheckbox must be selected on the table form (theindicate_presenceattribute istrue). Available attributes: Example: IndicatePresence<IndicatePresencetableName=\"{data.table_name}\"recordId=\"{data.record_id}\"></IndicatePresence> The code above displays the following element on the page:",
+      "images": []
+    },
+    {
+      "doc_id": "form_52152c19e599",
+      "title": "Form",
+      "section_id": 4,
+      "heading": "IndicatePresence​",
+      "chunk_index": 0,
+      "chunk_text": "Use the<IndicatePresence>tag with the<Form>tag to add the presence indication widget to a form. To display the widget, theIndicate presencecheckbox must be selected on the table form (theindicate_presenceattribute istrue). Available attributes: Example: IndicatePresence<IndicatePresencetableName=\"{data.table_name}\"recordId=\"{data.record_id}\"></IndicatePresence> The code above displays the following element on the page:",
+      "images": []
+    },
+    {
+      "doc_id": "_ea76763adea4",
+      "title": "Portal SimpleTags",
+      "section_id": 1,
+      "heading": "📄️authfull",
+      "chunk_index": 0,
+      "chunk_text": "Configure user authorization",
+      "images": []
+    },
+    {
+      "doc_id": "_ea76763adea4",
+      "title": "Portal SimpleTags",
+      "section_id": 2,
+      "heading": "📄️authheader",
+      "chunk_index": 0,
+      "chunk_text": "Display the username and avatar",
+      "images": []
+    },
+    {
+      "doc_id": "_ea76763adea4",
+      "title": "Portal SimpleTags",
+      "section_id": 3,
+      "heading": "📄️breadcrumbs",
+      "chunk_index": 0,
+      "chunk_text": "Display the navigation chain",
+      "images": []
+    },
+    {
+      "doc_id": "_ea76763adea4",
+      "title": "Portal SimpleTags",
+      "section_id": 4,
+      "heading": "📄️card",
+      "chunk_index": 0,
+      "chunk_text": "Display information and its source link as a card",
+      "images": []
+    },
+    {
+      "doc_id": "_ea76763adea4",
+      "title": "Portal SimpleTags",
+      "section_id": 5,
+      "heading": "📄️category",
+      "chunk_index": 0,
+      "chunk_text": "Display portal categories and item structure",
+      "images": []
+    },
+    {
+      "doc_id": "_ea76763adea4",
+      "title": "Portal SimpleTags",
+      "section_id": 6,
+      "heading": "📄️categoryFlat",
+      "chunk_index": 0,
+      "chunk_text": "Display portal object categories",
+      "images": []
+    },
+    {
+      "doc_id": "_ea76763adea4",
+      "title": "Portal SimpleTags",
+      "section_id": 7,
+      "heading": "📄️dropdownMenu",
+      "chunk_index": 0,
+      "chunk_text": "Create a nested drop-down menu",
+      "images": []
+    },
+    {
+      "doc_id": "_ea76763adea4",
+      "title": "Portal SimpleTags",
+      "section_id": 8,
+      "heading": "📄️listitems",
+      "chunk_index": 0,
+      "chunk_text": "Display table records in a list view",
+      "images": []
+    },
+    {
+      "doc_id": "_ea76763adea4",
+      "title": "Portal SimpleTags",
+      "section_id": 9,
+      "heading": "📄️previewList",
+      "chunk_index": 0,
+      "chunk_text": "Display only specific records in a list",
+      "images": []
+    },
+    {
+      "doc_id": "_ea76763adea4",
+      "title": "Portal SimpleTags",
+      "section_id": 10,
+      "heading": "📄️results",
+      "chunk_index": 0,
+      "chunk_text": "Display search results",
+      "images": []
+    },
+    {
+      "doc_id": "_ea76763adea4",
+      "title": "Portal SimpleTags",
+      "section_id": 11,
+      "heading": "📄️search",
+      "chunk_index": 0,
+      "chunk_text": "Implement the search functionality",
+      "images": []
+    },
+    {
+      "doc_id": "_ea76763adea4",
+      "title": "Portal SimpleTags",
+      "section_id": 12,
+      "heading": "📄️sidemenu",
+      "chunk_index": 0,
+      "chunk_text": "Configure a side menu on the portal",
+      "images": []
+    },
+    {
+      "doc_id": "dropdownmenu_aadb2364fe75",
+      "title": "dropdownMenu",
+      "section_id": 1,
+      "heading": "Attributes​",
+      "chunk_index": 0,
+      "chunk_text": "Available attributes: Example: dropdownMenu<dropdownMenumodel=\"data.menu\"></dropdownMenu> The template above displays a menu with three dots on the page: The menu structure is described in the server script. Available properties of themenuobject: You can add decorations to the elements of the dropdownMenu. Available properties of thedecorationobject:",
+      "images": []
+    },
+    {
+      "doc_id": "dropdownmenu_aadb2364fe75",
+      "title": "dropdownMenu",
+      "section_id": 2,
+      "heading": "Menu structure​",
+      "chunk_index": 0,
+      "chunk_text": "The menu structure is described in the server script. Available properties of themenuobject: You can add decorations to the elements of the dropdownMenu. Available properties of thedecorationobject:",
+      "images": []
+    },
+    {
+      "doc_id": "dropdownmenu_aadb2364fe75",
+      "title": "dropdownMenu",
+      "section_id": 3,
+      "heading": "Decorations​",
+      "chunk_index": 0,
+      "chunk_text": "You can add decorations to the elements of the dropdownMenu. Available properties of thedecorationobject:",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 1,
+      "heading": "Attribute types​",
+      "chunk_index": 0,
+      "chunk_text": "Set the attribute value to the customs_widget_custommethod created in the client script. The client controller components: In the widget template, use data input fields for passing the data values for any purpose. After the client script processed the data, invoke thes_widget.serverUpdate()method to send the data to the server controller.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 1,
+      "heading": "Attribute types​",
+      "chunk_index": 1,
+      "chunk_text": "There are two types of widget attributes: Specify the actions performed when thechangeevent occurs. event-change<stringmodel=\"data.lastname\"event-change=\"s_widget_custom.updateFullname();\"></string> Specify the actions that should be performed when theclickevent occurs. event-click<buttonevent-click=\"window.s_widget_custom.close();\">{data.closeTitle}</button> Specify a function called when the value is changed. Example 1 Template<stringmodel=\"data.lastname\"event-change=\";(( ) => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)} )();\"></string><stringmodel=\"data.firstname\"event-change=\";( () => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)})();\"></string><h1>{data.fullname}</h1> Example 2 Client script;(()=>{window.s_widget_custom=window.s_widget_custom||{};window.s_widget_custom.updateFullname=function(){constlastname=s_widget.getFieldValue('lastname')||'';constfirstname=s_widget.getFieldValue('firstname')||'';s_widget.setFieldValue('fullname2',lastname+' '+firstname)}})(); Template<stringmodel=\"data.lastname\"event-change=\";(( ) => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)} )();\"></string><stringmodel=\"data.firstname\"event-change=\";( () => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)})();\"></string><h1>{data.fullname}</h1>",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 1,
+      "heading": "Attribute types​",
+      "chunk_index": 2,
+      "chunk_text": "You can manage the entered data according to your purposes.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 1,
+      "heading": "Attribute types​",
+      "chunk_index": 3,
+      "chunk_text": "The code below implements data input using themodeltag attribute, after the data gets updated on the client-side, this value passes to the<h1>header. HTML<stringmodel=\"data.input\"></string><h1>{data.input}</h1> The<string>field is a text field that allows a user to enter some text information. The<h1>header dynamically displays this text with the{data.input}object.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 1,
+      "heading": "Attribute types​",
+      "chunk_index": 4,
+      "chunk_text": "The examples below describe how to place the values into two fields and output the joined value of them formatted with \"h1 header\" style in two different ways.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 1,
+      "heading": "Attribute types​",
+      "chunk_index": 5,
+      "chunk_text": "noteThe attribute is applied to the<durationinput>and<search>tags instead ofevent-change.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 1,
+      "heading": "Attribute types​",
+      "chunk_index": 6,
+      "chunk_text": "Input fields are widget elements.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 1,
+      "heading": "Attribute types​",
+      "chunk_index": 7,
+      "chunk_text": "The client script uses thedataobject to access data received form the server side. When calling this method, the server scriptdataobject automatically overwrites the client controllerdataobject.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 2,
+      "heading": "Configuration attributes​",
+      "chunk_index": 0,
+      "chunk_text": "Set the attribute value to the customs_widget_custommethod created in the client script. The client controller components: In the widget template, use data input fields for passing the data values for any purpose. After the client script processed the data, invoke thes_widget.serverUpdate()method to send the data to the server controller.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 2,
+      "heading": "Configuration attributes​",
+      "chunk_index": 1,
+      "chunk_text": "The code below implements data input using themodeltag attribute, after the data gets updated on the client-side, this value passes to the<h1>header. HTML<stringmodel=\"data.input\"></string><h1>{data.input}</h1> The<string>field is a text field that allows a user to enter some text information. The<h1>header dynamically displays this text with the{data.input}object.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 2,
+      "heading": "Configuration attributes​",
+      "chunk_index": 2,
+      "chunk_text": "The examples below describe how to place the values into two fields and output the joined value of them formatted with \"h1 header\" style in two different ways.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 2,
+      "heading": "Configuration attributes​",
+      "chunk_index": 3,
+      "chunk_text": "event-change<stringmodel=\"data.lastname\"event-change=\"s_widget_custom.updateFullname();\"></string> Specify the actions that should be performed when theclickevent occurs. event-click<buttonevent-click=\"window.s_widget_custom.close();\">{data.closeTitle}</button> Specify a function called when the value is changed. Example 1 Template<stringmodel=\"data.lastname\"event-change=\";(( ) => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)} )();\"></string><stringmodel=\"data.firstname\"event-change=\";( () => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)})();\"></string><h1>{data.fullname}</h1> Example 2 Client script;(()=>{window.s_widget_custom=window.s_widget_custom||{};window.s_widget_custom.updateFullname=function(){constlastname=s_widget.getFieldValue('lastname')||'';constfirstname=s_widget.getFieldValue('firstname')||'';s_widget.setFieldValue('fullname2',lastname+' '+firstname)}})(); Template<stringmodel=\"data.lastname\"event-change=\";(( ) => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)} )();\"></string><stringmodel=\"data.firstname\"event-change=\";( () => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)})();\"></string><h1>{data.fullname}</h1>",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 2,
+      "heading": "Configuration attributes​",
+      "chunk_index": 4,
+      "chunk_text": "Specify the actions performed when thechangeevent occurs.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 2,
+      "heading": "Configuration attributes​",
+      "chunk_index": 5,
+      "chunk_text": "noteThe attribute is applied to the<durationinput>and<search>tags instead ofevent-change.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 2,
+      "heading": "Configuration attributes​",
+      "chunk_index": 6,
+      "chunk_text": "You can manage the entered data according to your purposes.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 2,
+      "heading": "Configuration attributes​",
+      "chunk_index": 7,
+      "chunk_text": "Input fields are widget elements.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 2,
+      "heading": "Configuration attributes​",
+      "chunk_index": 8,
+      "chunk_text": "The client script uses thedataobject to access data received form the server side. When calling this method, the server scriptdataobject automatically overwrites the client controllerdataobject.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 3,
+      "heading": "Event-related attributes​",
+      "chunk_index": 0,
+      "chunk_text": "Set the attribute value to the customs_widget_custommethod created in the client script. The client controller components: In the widget template, use data input fields for passing the data values for any purpose. After the client script processed the data, invoke thes_widget.serverUpdate()method to send the data to the server controller.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 3,
+      "heading": "Event-related attributes​",
+      "chunk_index": 1,
+      "chunk_text": "The code below implements data input using themodeltag attribute, after the data gets updated on the client-side, this value passes to the<h1>header. HTML<stringmodel=\"data.input\"></string><h1>{data.input}</h1> The<string>field is a text field that allows a user to enter some text information. The<h1>header dynamically displays this text with the{data.input}object.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 3,
+      "heading": "Event-related attributes​",
+      "chunk_index": 2,
+      "chunk_text": "The examples below describe how to place the values into two fields and output the joined value of them formatted with \"h1 header\" style in two different ways.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 3,
+      "heading": "Event-related attributes​",
+      "chunk_index": 3,
+      "chunk_text": "event-change<stringmodel=\"data.lastname\"event-change=\"s_widget_custom.updateFullname();\"></string> Specify the actions that should be performed when theclickevent occurs. event-click<buttonevent-click=\"window.s_widget_custom.close();\">{data.closeTitle}</button> Specify a function called when the value is changed. Example 1 Template<stringmodel=\"data.lastname\"event-change=\";(( ) => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)} )();\"></string><stringmodel=\"data.firstname\"event-change=\";( () => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)})();\"></string><h1>{data.fullname}</h1> Example 2 Client script;(()=>{window.s_widget_custom=window.s_widget_custom||{};window.s_widget_custom.updateFullname=function(){constlastname=s_widget.getFieldValue('lastname')||'';constfirstname=s_widget.getFieldValue('firstname')||'';s_widget.setFieldValue('fullname2',lastname+' '+firstname)}})(); Template<stringmodel=\"data.lastname\"event-change=\";(( ) => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)} )();\"></string><stringmodel=\"data.firstname\"event-change=\";( () => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)})();\"></string><h1>{data.fullname}</h1>",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 3,
+      "heading": "Event-related attributes​",
+      "chunk_index": 4,
+      "chunk_text": "Specify the actions performed when thechangeevent occurs.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 3,
+      "heading": "Event-related attributes​",
+      "chunk_index": 5,
+      "chunk_text": "noteThe attribute is applied to the<durationinput>and<search>tags instead ofevent-change.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 3,
+      "heading": "Event-related attributes​",
+      "chunk_index": 6,
+      "chunk_text": "You can manage the entered data according to your purposes.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 3,
+      "heading": "Event-related attributes​",
+      "chunk_index": 7,
+      "chunk_text": "Input fields are widget elements.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 3,
+      "heading": "Event-related attributes​",
+      "chunk_index": 8,
+      "chunk_text": "The client script uses thedataobject to access data received form the server side. When calling this method, the server scriptdataobject automatically overwrites the client controllerdataobject.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 4,
+      "heading": "Widget data input and output​",
+      "chunk_index": 0,
+      "chunk_text": "The code below implements data input using themodeltag attribute, after the data gets updated on the client-side, this value passes to the<h1>header. HTML<stringmodel=\"data.input\"></string><h1>{data.input}</h1> The<string>field is a text field that allows a user to enter some text information. The<h1>header dynamically displays this text with the{data.input}object.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 4,
+      "heading": "Widget data input and output​",
+      "chunk_index": 1,
+      "chunk_text": "The client controller components: In the widget template, use data input fields for passing the data values for any purpose. After the client script processed the data, invoke thes_widget.serverUpdate()method to send the data to the server controller. Example 1 Template<stringmodel=\"data.lastname\"event-change=\";(( ) => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)} )();\"></string><stringmodel=\"data.firstname\"event-change=\";( () => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)})();\"></string><h1>{data.fullname}</h1> Example 2 Client script;(()=>{window.s_widget_custom=window.s_widget_custom||{};window.s_widget_custom.updateFullname=function(){constlastname=s_widget.getFieldValue('lastname')||'';constfirstname=s_widget.getFieldValue('firstname')||'';s_widget.setFieldValue('fullname2',lastname+' '+firstname)}})(); Template<stringmodel=\"data.lastname\"event-change=\";(( ) => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)} )();\"></string><stringmodel=\"data.firstname\"event-change=\";( () => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)})();\"></string><h1>{data.fullname}</h1>",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 4,
+      "heading": "Widget data input and output​",
+      "chunk_index": 2,
+      "chunk_text": "The client script uses thedataobject to access data received form the server side. When calling this method, the server scriptdataobject automatically overwrites the client controllerdataobject.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 4,
+      "heading": "Widget data input and output​",
+      "chunk_index": 3,
+      "chunk_text": "You can manage the entered data according to your purposes.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 4,
+      "heading": "Widget data input and output​",
+      "chunk_index": 4,
+      "chunk_text": "The examples below describe how to place the values into two fields and output the joined value of them formatted with \"h1 header\" style in two different ways.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 4,
+      "heading": "Widget data input and output​",
+      "chunk_index": 5,
+      "chunk_text": "Input fields are widget elements.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 5,
+      "heading": "Input and output fields​",
+      "chunk_index": 0,
+      "chunk_text": "The code below implements data input using themodeltag attribute, after the data gets updated on the client-side, this value passes to the<h1>header. HTML<stringmodel=\"data.input\"></string><h1>{data.input}</h1> The<string>field is a text field that allows a user to enter some text information. The<h1>header dynamically displays this text with the{data.input}object.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 5,
+      "heading": "Input and output fields​",
+      "chunk_index": 1,
+      "chunk_text": "The examples below describe how to place the values into two fields and output the joined value of them formatted with \"h1 header\" style in two different ways.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 5,
+      "heading": "Input and output fields​",
+      "chunk_index": 2,
+      "chunk_text": "Example 1 Template<stringmodel=\"data.lastname\"event-change=\";(( ) => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)} )();\"></string><stringmodel=\"data.firstname\"event-change=\";( () => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)})();\"></string><h1>{data.fullname}</h1> Example 2 Client script;(()=>{window.s_widget_custom=window.s_widget_custom||{};window.s_widget_custom.updateFullname=function(){constlastname=s_widget.getFieldValue('lastname')||'';constfirstname=s_widget.getFieldValue('firstname')||'';s_widget.setFieldValue('fullname2',lastname+' '+firstname)}})(); Template<stringmodel=\"data.lastname\"event-change=\";(( ) => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)} )();\"></string><stringmodel=\"data.firstname\"event-change=\";( () => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)})();\"></string><h1>{data.fullname}</h1>",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 5,
+      "heading": "Input and output fields​",
+      "chunk_index": 3,
+      "chunk_text": "You can manage the entered data according to your purposes.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 5,
+      "heading": "Input and output fields​",
+      "chunk_index": 4,
+      "chunk_text": "Input fields are widget elements.",
+      "images": []
+    },
+    {
+      "doc_id": "tag-attributes_5fe15defcbb2",
+      "title": "Tag Attributes",
+      "section_id": 6,
+      "heading": "Multiple data output​",
+      "chunk_index": 0,
+      "chunk_text": "The examples below describe how to place the values into two fields and output the joined value of them formatted with \"h1 header\" style in two different ways. Example 1 Template<stringmodel=\"data.lastname\"event-change=\";(( ) => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)} )();\"></string><stringmodel=\"data.firstname\"event-change=\";( () => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)})();\"></string><h1>{data.fullname}</h1> Example 2 Client script;(()=>{window.s_widget_custom=window.s_widget_custom||{};window.s_widget_custom.updateFullname=function(){constlastname=s_widget.getFieldValue('lastname')||'';constfirstname=s_widget.getFieldValue('firstname')||'';s_widget.setFieldValue('fullname2',lastname+' '+firstname)}})(); Template<stringmodel=\"data.lastname\"event-change=\";(( ) => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)} )();\"></string><stringmodel=\"data.firstname\"event-change=\";( () => {const lastname = s_widget.getFieldValue('lastname') || '';const firstname = s_widget.getFieldValue('firstname') || '';s_widget.setFieldValue('fullname', lastname + ' ' + firstname)})();\"></string><h1>{data.fullname}</h1>",
+      "images": []
+    },
+    {
+      "doc_id": "api-directives_e86157a2b36b",
+      "title": "API Directives",
+      "section_id": 1,
+      "heading": "simple-class​",
+      "chunk_index": 0,
+      "chunk_text": "In this example, the directive defines the current day of the week and displays a corresponding phrase“It's Friday!” in the widget. Template <psimple-show=\"new Date().getDay()===5\">It's Friday!</p> Type: String Use this directive to customize the tag layout: background color, font settings, pointer, and others.",
+      "images": []
+    },
+    {
+      "doc_id": "api-directives_e86157a2b36b",
+      "title": "API Directives",
+      "section_id": 1,
+      "heading": "simple-class​",
+      "chunk_index": 1,
+      "chunk_text": "If the specified condition is not satisfied, the elements are removed from theDocument Object Model(DOM). If the specified condition is not satisfied, the hidden elements remain in theDocument Object Model(DOM).",
+      "images": []
+    },
+    {
+      "doc_id": "api-directives_e86157a2b36b",
+      "title": "API Directives",
+      "section_id": 1,
+      "heading": "simple-class​",
+      "chunk_index": 2,
+      "chunk_text": "Type: String Create a class containing custom CSS style parameters, to easily apply it to your widgets. Define the class in theCSSfield of theWidgetform.",
+      "images": []
+    },
+    {
+      "doc_id": "api-directives_e86157a2b36b",
+      "title": "API Directives",
+      "section_id": 1,
+      "heading": "simple-class​",
+      "chunk_index": 3,
+      "chunk_text": "Template <psimple-if=\"{data.model_id}\">Model Detected</p> Client script (()=>{constparameter=newURLSearchParams(window.location.search).get('model_id');s_widget.setFieldValue('model_id',parameter);})(); Type: String This directive allows you to hide or show the widget, or part of it.",
+      "images": []
+    },
+    {
+      "doc_id": "api-directives_e86157a2b36b",
+      "title": "API Directives",
+      "section_id": 1,
+      "heading": "simple-class​",
+      "chunk_index": 4,
+      "chunk_text": "Template <psimple-style=\"{background: '#FF0000'}\">Attention please!</p>",
+      "images": []
+    },
+    {
+      "doc_id": "api-directives_e86157a2b36b",
+      "title": "API Directives",
+      "section_id": 1,
+      "heading": "simple-class​",
+      "chunk_index": 5,
+      "chunk_text": "The following example enables a block of a widget if a set condition is met.",
+      "images": []
+    },
+    {
+      "doc_id": "api-directives_e86157a2b36b",
+      "title": "API Directives",
+      "section_id": 1,
+      "heading": "simple-class​",
+      "chunk_index": 6,
+      "chunk_text": "In this example, you can see, how to customize the text style.",
+      "images": []
+    },
+    {
+      "doc_id": "api-directives_e86157a2b36b",
+      "title": "API Directives",
+      "section_id": 1,
+      "heading": "simple-class​",
+      "chunk_index": 7,
+      "chunk_text": "To display a phrase with custom settings, do the following: Template <psimple-class=\"friday-class\">It's Friday!</p> CSS .friday-class{animation:blinker1slinear infinite;background:#FF00FF;}@keyframesblinker{50%{opacity:0;}} Type: String This directive allows you to hide or show the widget, or part of it.",
+      "images": []
+    },
+    {
+      "doc_id": "api-directives_e86157a2b36b",
+      "title": "API Directives",
+      "section_id": 2,
+      "heading": "simple-if​",
+      "chunk_index": 0,
+      "chunk_text": "In this example, the directive defines the current day of the week and displays a corresponding phrase“It's Friday!” in the widget. Template <psimple-show=\"new Date().getDay()===5\">It's Friday!</p> Type: String Use this directive to customize the tag layout: background color, font settings, pointer, and others.",
+      "images": []
+    },
+    {
+      "doc_id": "api-directives_e86157a2b36b",
+      "title": "API Directives",
+      "section_id": 2,
+      "heading": "simple-if​",
+      "chunk_index": 1,
+      "chunk_text": "Type: String This directive allows you to hide or show the widget, or part of it. Template <psimple-if=\"{data.model_id}\">Model Detected</p> Client script (()=>{constparameter=newURLSearchParams(window.location.search).get('model_id');s_widget.setFieldValue('model_id',parameter);})(); Type: String This directive allows you to hide or show the widget, or part of it.",
+      "images": []
+    },
+    {
+      "doc_id": "api-directives_e86157a2b36b",
+      "title": "API Directives",
+      "section_id": 2,
+      "heading": "simple-if​",
+      "chunk_index": 2,
+      "chunk_text": "If the specified condition is not satisfied, the elements are removed from theDocument Object Model(DOM). If the specified condition is not satisfied, the hidden elements remain in theDocument Object Model(DOM).",
+      "images": []
+    },
+    {
+      "doc_id": "api-directives_e86157a2b36b",
+      "title": "API Directives",
+      "section_id": 2,
+      "heading": "simple-if​",
+      "chunk_index": 3,
+      "chunk_text": "Template <psimple-style=\"{background: '#FF0000'}\">Attention please!</p>",
+      "images": []
+    },
+    {
+      "doc_id": "api-directives_e86157a2b36b",
+      "title": "API Directives",
+      "section_id": 2,
+      "heading": "simple-if​",
+      "chunk_index": 4,
+      "chunk_text": "The following example enables a block of a widget if a set condition is met.",
+      "images": []
+    },
+    {
+      "doc_id": "api-directives_e86157a2b36b",
+      "title": "API Directives",
+      "section_id": 2,
+      "heading": "simple-if​",
+      "chunk_index": 5,
+      "chunk_text": "In this example, you can see, how to customize the text style.",
+      "images": []
+    },
+    {
+      "doc_id": "api-directives_e86157a2b36b",
+      "title": "API Directives",
+      "section_id": 3,
+      "heading": "simple-show​",
+      "chunk_index": 0,
+      "chunk_text": "In this example, the directive defines the current day of the week and displays a corresponding phrase“It's Friday!” in the widget. Template <psimple-show=\"new Date().getDay()===5\">It's Friday!</p> Type: String Use this directive to customize the tag layout: background color, font settings, pointer, and others.",
+      "images": []
+    },
+    {
+      "doc_id": "api-directives_e86157a2b36b",
+      "title": "API Directives",
+      "section_id": 3,
+      "heading": "simple-show​",
+      "chunk_index": 1,
+      "chunk_text": "In this example, you can see, how to customize the text style.",
+      "images": []
+    },
+    {
+      "doc_id": "api-directives_e86157a2b36b",
+      "title": "API Directives",
+      "section_id": 3,
+      "heading": "simple-show​",
+      "chunk_index": 2,
+      "chunk_text": "Template <psimple-style=\"{background: '#FF0000'}\">Attention please!</p>",
+      "images": []
+    },
+    {
+      "doc_id": "api-directives_e86157a2b36b",
+      "title": "API Directives",
+      "section_id": 3,
+      "heading": "simple-show​",
+      "chunk_index": 3,
+      "chunk_text": "Type: String This directive allows you to hide or show the widget, or part of it.",
+      "images": []
+    },
+    {
+      "doc_id": "api-directives_e86157a2b36b",
+      "title": "API Directives",
+      "section_id": 3,
+      "heading": "simple-show​",
+      "chunk_index": 4,
+      "chunk_text": "If the specified condition is not satisfied, the hidden elements remain in theDocument Object Model(DOM).",
+      "images": []
+    },
+    {
+      "doc_id": "api-directives_e86157a2b36b",
+      "title": "API Directives",
+      "section_id": 4,
+      "heading": "simple-style​",
+      "chunk_index": 0,
+      "chunk_text": "Type: String Use this directive to customize the tag layout: background color, font settings, pointer, and others. In this example, you can see, how to customize the text style. Template <psimple-style=\"{background: '#FF0000'}\">Attention please!</p>",
+      "images": []
+    },
+    {
+      "doc_id": "_1319e6783b00",
+      "title": "Widgets",
+      "section_id": 1,
+      "heading": "Widget Scripts​",
+      "chunk_index": 0,
+      "chunk_text": "Learn how widgets work, how to create and customize them, and set up interactions between multiple widgets. Learn how to add widgets on the forms and portal pages. Get acquainted with the available client events that can be used in the client scripts to invoke various actions. Get acquainted with the customizable SimpleOne platform widgets.",
+      "images": []
+    },
+    {
+      "doc_id": "_1319e6783b00",
+      "title": "Widgets",
+      "section_id": 2,
+      "heading": "Widgets Displaying​",
+      "chunk_index": 0,
+      "chunk_text": "Learn how to add widgets on the forms and portal pages. Get acquainted with the available client events that can be used in the client scripts to invoke various actions. Get acquainted with the customizable SimpleOne platform widgets.",
+      "images": []
+    },
+    {
+      "doc_id": "_1319e6783b00",
+      "title": "Widgets",
+      "section_id": 3,
+      "heading": "Global Client Events​",
+      "chunk_index": 0,
+      "chunk_text": "Get acquainted with the available client events that can be used in the client scripts to invoke various actions. Get acquainted with the customizable SimpleOne platform widgets.",
+      "images": []
+    },
+    {
+      "doc_id": "_1319e6783b00",
+      "title": "Widgets",
+      "section_id": 4,
+      "heading": "Available Widgets​",
+      "chunk_index": 0,
+      "chunk_text": "Get acquainted with the customizable SimpleOne platform widgets.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 1,
+      "heading": "Create a widget​",
+      "chunk_index": 0,
+      "chunk_text": "To create a widget, complete the following steps: Widget form fields warningIt is not recommended to use native JS methods and properties manipulating theDocument Object Modelin widget client scripts. The widget template defines the fields and buttons displayed using HTML andSimpleTags.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 1,
+      "heading": "Create a widget​",
+      "chunk_index": 1,
+      "chunk_text": "Use theCSSfield to specify a style of the template components displayed.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 1,
+      "heading": "Create a widget​",
+      "chunk_index": 2,
+      "chunk_text": "See the example below.Usage// Not Recommendeddocument.querySelector(\".article-body\").innerHTML=s_widget.getFieldValue('body');// Recommendeds_widget.addTemplate('body',s_widget.getFieldValue('body')); The following scheme illustrates how the data is passed between the server and client scripts using the global objects:  The following example illustrates the components of the widget that display the fields: The server controller usesdata.incidentto access theinput.incidentdata received from the client controller. Depending on theinput.operation_codereceived, the server controller runs the query to the database for: You can set user methods for the widgets with thewindow.s_widget_customvariable in the client script. The client script includes threes_widget_custommethods declared: Each method invokess_widget.serverUpdate()for sending and receiving data back from the server controller. In cases you need widgets to interact with each other, uses_widgetsmethods in your client scripts: window.s_widgets.getFieldValue('157555401214600424','name');window.s_widgets.getFieldValue('157555401214600424','name','Alex'); window.s_widgets.getWidgets(); window.s_widget.getElements();",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 1,
+      "heading": "Create a widget​",
+      "chunk_index": 3,
+      "chunk_text": "For example, using such properties asElement.innerHTMLorElement.outerHTMLin the client scripts can cause malfunction.To avoid errors, use the methods provided and supported by the vendor instead.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 1,
+      "heading": "Create a widget​",
+      "chunk_index": 4,
+      "chunk_text": "Click the buttons to activate the methods declared in the client controller.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 1,
+      "heading": "Create a widget​",
+      "chunk_index": 5,
+      "chunk_text": "Thedataobject refers to theredirect_urlreceived from the server script.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 1,
+      "heading": "Create a widget​",
+      "chunk_index": 6,
+      "chunk_text": "A widget includes four components that define its view, execution, and behavior: tipRole required:admin.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 2,
+      "heading": "Widget example​",
+      "chunk_index": 0,
+      "chunk_text": "The following example illustrates the components of the widget that display the fields: The server controller usesdata.incidentto access theinput.incidentdata received from the client controller. Depending on theinput.operation_codereceived, the server controller runs the query to the database for: You can set user methods for the widgets with thewindow.s_widget_customvariable in the client script. The client script includes threes_widget_custommethods declared: Each method invokess_widget.serverUpdate()for sending and receiving data back from the server controller. In cases you need widgets to interact with each other, uses_widgetsmethods in your client scripts: window.s_widgets.getFieldValue('157555401214600424','name');window.s_widgets.getFieldValue('157555401214600424','name','Alex'); window.s_widgets.getWidgets(); window.s_widget.getElements();",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 2,
+      "heading": "Widget example​",
+      "chunk_index": 1,
+      "chunk_text": "Use theCSSfield to specify a style of the template components displayed.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 2,
+      "heading": "Widget example​",
+      "chunk_index": 2,
+      "chunk_text": "Thedataobject refers to theredirect_urlreceived from the server script.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 2,
+      "heading": "Widget example​",
+      "chunk_index": 3,
+      "chunk_text": "Click the buttons to activate the methods declared in the client controller.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 2,
+      "heading": "Widget example​",
+      "chunk_index": 4,
+      "chunk_text": "The widget template defines the fields and buttons displayed using HTML andSimpleTags.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 3,
+      "heading": "Server controller​",
+      "chunk_index": 0,
+      "chunk_text": "Depending on theinput.operation_codereceived, the server controller runs the query to the database for: You can set user methods for the widgets with thewindow.s_widget_customvariable in the client script. The client script includes threes_widget_custommethods declared: Each method invokess_widget.serverUpdate()for sending and receiving data back from the server controller. In cases you need widgets to interact with each other, uses_widgetsmethods in your client scripts: window.s_widgets.getFieldValue('157555401214600424','name');window.s_widgets.getFieldValue('157555401214600424','name','Alex'); window.s_widgets.getWidgets(); window.s_widget.getElements();",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 3,
+      "heading": "Server controller​",
+      "chunk_index": 1,
+      "chunk_text": "Use theCSSfield to specify a style of the template components displayed.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 3,
+      "heading": "Server controller​",
+      "chunk_index": 2,
+      "chunk_text": "The widget template defines the fields and buttons displayed using HTML andSimpleTags.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 3,
+      "heading": "Server controller​",
+      "chunk_index": 3,
+      "chunk_text": "Click the buttons to activate the methods declared in the client controller.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 3,
+      "heading": "Server controller​",
+      "chunk_index": 4,
+      "chunk_text": "The server controller usesdata.incidentto access theinput.incidentdata received from the client controller.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 3,
+      "heading": "Server controller​",
+      "chunk_index": 5,
+      "chunk_text": "Thedataobject refers to theredirect_urlreceived from the server script.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 4,
+      "heading": "Client controller​",
+      "chunk_index": 0,
+      "chunk_text": "You can set user methods for the widgets with thewindow.s_widget_customvariable in the client script. The client script includes threes_widget_custommethods declared: Each method invokess_widget.serverUpdate()for sending and receiving data back from the server controller. In cases you need widgets to interact with each other, uses_widgetsmethods in your client scripts: window.s_widgets.getFieldValue('157555401214600424','name');window.s_widgets.getFieldValue('157555401214600424','name','Alex'); window.s_widgets.getWidgets(); window.s_widget.getElements();",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 4,
+      "heading": "Client controller​",
+      "chunk_index": 1,
+      "chunk_text": "Click the buttons to activate the methods declared in the client controller.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 4,
+      "heading": "Client controller​",
+      "chunk_index": 2,
+      "chunk_text": "Use theCSSfield to specify a style of the template components displayed.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 4,
+      "heading": "Client controller​",
+      "chunk_index": 3,
+      "chunk_text": "Thedataobject refers to theredirect_urlreceived from the server script.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 4,
+      "heading": "Client controller​",
+      "chunk_index": 4,
+      "chunk_text": "The widget template defines the fields and buttons displayed using HTML andSimpleTags.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 5,
+      "heading": "HTML template​",
+      "chunk_index": 0,
+      "chunk_text": "The widget template defines the fields and buttons displayed using HTML andSimpleTags. Click the buttons to activate the methods declared in the client controller. Use theCSSfield to specify a style of the template components displayed. In cases you need widgets to interact with each other, uses_widgetsmethods in your client scripts: window.s_widgets.getFieldValue('157555401214600424','name');window.s_widgets.getFieldValue('157555401214600424','name','Alex'); window.s_widgets.getWidgets(); window.s_widget.getElements();",
+      "images": []
+    },
+    {
+      "doc_id": "widget-scripts_4f34fea5fa7b",
+      "title": "Widget Scripts",
+      "section_id": 6,
+      "heading": "Widget interaction​",
+      "chunk_index": 0,
+      "chunk_text": "In cases you need widgets to interact with each other, uses_widgetsmethods in your client scripts: window.s_widgets.getFieldValue('157555401214600424','name');window.s_widgets.getFieldValue('157555401214600424','name','Alex'); window.s_widgets.getWidgets(); window.s_widget.getElements();",
+      "images": []
+    },
+    {
+      "doc_id": "global-client-events_4e2c5fa6fef4",
+      "title": "Global Client Events",
+      "section_id": 1,
+      "heading": "activityFeedCommentTabChanged​",
+      "chunk_index": 0,
+      "chunk_text": "Return: Example: onSimpleEventBus.on('afterLoadWidgets',async(obj)=>{if(obj.name==='active'&&obj.isValid){// do something}}); The event occurs after a form is saved. Return: Object{\"payload\":{\"view\":\"Default\",\"tableName\":\"task\",\"recordId\":\"166307559406494736\",\"displayValue\":\"\"},\"result\":\"OK\"} Error{\"payload\":{\"errors\":[...]},\"result\":\"ERROR\"} Example: onSimpleEventBus.on('afterSaveEvent',async(obj)=>{constsavedRecordId=obj.payload.recordId;}); The event occurs after a form is saved and when the UI actions are returned. Return: Object{\"payload\":{\"view\":\"Default\",\"tableName\":\"task\",\"recordId\":\"166307559406494736\",\"displayValue\":\"\"},\"result\":\"OK\"} Error{\"payload\":{\"errors\":[...]},\"result\":\"ERROR\"} Example: onSimpleEventBus.on('afterSaveAndGetUiActionsEvent',async(obj)=>{constsavedRecordId=obj.payload.recordId;}); The event occurs after the widget field validation. Return: {name:'active',isValid:true,} Example: onSimpleEventBus.on('afterValidation',async(obj)=>{if(obj.name==='active'&&obj.isValid){// do something}}); The event calls the validation of fields. Return: Example: onSimpleEventBus.emit('validation',fields); SeeSimpleEventBusfor more information.",
+      "images": []
+    },
+    {
+      "doc_id": "global-client-events_4e2c5fa6fef4",
+      "title": "Global Client Events",
+      "section_id": 1,
+      "heading": "activityFeedCommentTabChanged​",
+      "chunk_index": 1,
+      "chunk_text": "Return: {previousTab:'previous',currentTab:'current',widgetInstanceId:'10000001',} Example: onSimpleEventBus.on('activityFeedCommentTabChanged',async(obj)=>{constpreviousTab=obj.previousTab;}); The event occurs after the breadcrumbs are loaded. Return: {'currentNode':{title:'current Title',url:'/current',},'previousNode':{title:'previous Title',url:'/previous',}} Example: onSimpleEventBus.on('afterLoadBreadcrumbs',async(obj)=>{constbackUrl=obj.previousNode.url;}); The event occurs when all widgets are loaded.",
+      "images": []
+    },
+    {
+      "doc_id": "global-client-events_4e2c5fa6fef4",
+      "title": "Global Client Events",
+      "section_id": 1,
+      "heading": "activityFeedCommentTabChanged​",
+      "chunk_index": 2,
+      "chunk_text": "The event occurs after the comment tab in the Activity Feed widget has changed.",
+      "images": []
+    },
+    {
+      "doc_id": "global-client-events_4e2c5fa6fef4",
+      "title": "Global Client Events",
+      "section_id": 1,
+      "heading": "activityFeedCommentTabChanged​",
+      "chunk_index": 3,
+      "chunk_text": "It is used in combination with the validation event.",
+      "images": []
+    },
+    {
+      "doc_id": "global-client-events_4e2c5fa6fef4",
+      "title": "Global Client Events",
+      "section_id": 2,
+      "heading": "afterLoadBreadcrumbs​",
+      "chunk_index": 0,
+      "chunk_text": "The event occurs after the breadcrumbs are loaded. Return: {'currentNode':{title:'current Title',url:'/current',},'previousNode':{title:'previous Title',url:'/previous',}} Example: onSimpleEventBus.on('afterLoadBreadcrumbs',async(obj)=>{constbackUrl=obj.previousNode.url;}); The event occurs when all widgets are loaded.",
+      "images": []
+    },
+    {
+      "doc_id": "global-client-events_4e2c5fa6fef4",
+      "title": "Global Client Events",
+      "section_id": 2,
+      "heading": "afterLoadBreadcrumbs​",
+      "chunk_index": 1,
+      "chunk_text": "It is used in combination with the validation event.",
+      "images": []
+    },
+    {
+      "doc_id": "global-client-events_4e2c5fa6fef4",
+      "title": "Global Client Events",
+      "section_id": 2,
+      "heading": "afterLoadBreadcrumbs​",
+      "chunk_index": 2,
+      "chunk_text": "Return: Example: onSimpleEventBus.on('afterLoadWidgets',async(obj)=>{if(obj.name==='active'&&obj.isValid){// do something}}); The event occurs after a form is saved. Return: Object{\"payload\":{\"view\":\"Default\",\"tableName\":\"task\",\"recordId\":\"166307559406494736\",\"displayValue\":\"\"},\"result\":\"OK\"} Error{\"payload\":{\"errors\":[...]},\"result\":\"ERROR\"} Example: onSimpleEventBus.on('afterSaveEvent',async(obj)=>{constsavedRecordId=obj.payload.recordId;}); The event occurs after a form is saved and when the UI actions are returned. Return: Object{\"payload\":{\"view\":\"Default\",\"tableName\":\"task\",\"recordId\":\"166307559406494736\",\"displayValue\":\"\"},\"result\":\"OK\"} Error{\"payload\":{\"errors\":[...]},\"result\":\"ERROR\"} Example: onSimpleEventBus.on('afterSaveAndGetUiActionsEvent',async(obj)=>{constsavedRecordId=obj.payload.recordId;}); The event occurs after the widget field validation. Return: {name:'active',isValid:true,} Example: onSimpleEventBus.on('afterValidation',async(obj)=>{if(obj.name==='active'&&obj.isValid){// do something}}); The event calls the validation of fields. Return: Example: onSimpleEventBus.emit('validation',fields); SeeSimpleEventBusfor more information.",
+      "images": []
+    },
+    {
+      "doc_id": "global-client-events_4e2c5fa6fef4",
+      "title": "Global Client Events",
+      "section_id": 3,
+      "heading": "afterLoadWidgets​",
+      "chunk_index": 0,
+      "chunk_text": "Return: Example: onSimpleEventBus.on('afterLoadWidgets',async(obj)=>{if(obj.name==='active'&&obj.isValid){// do something}}); The event occurs after a form is saved. Return: Object{\"payload\":{\"view\":\"Default\",\"tableName\":\"task\",\"recordId\":\"166307559406494736\",\"displayValue\":\"\"},\"result\":\"OK\"} Error{\"payload\":{\"errors\":[...]},\"result\":\"ERROR\"} Example: onSimpleEventBus.on('afterSaveEvent',async(obj)=>{constsavedRecordId=obj.payload.recordId;}); The event occurs after a form is saved and when the UI actions are returned. Return: Object{\"payload\":{\"view\":\"Default\",\"tableName\":\"task\",\"recordId\":\"166307559406494736\",\"displayValue\":\"\"},\"result\":\"OK\"} Error{\"payload\":{\"errors\":[...]},\"result\":\"ERROR\"} Example: onSimpleEventBus.on('afterSaveAndGetUiActionsEvent',async(obj)=>{constsavedRecordId=obj.payload.recordId;}); The event occurs after the widget field validation. Return: {name:'active',isValid:true,} Example: onSimpleEventBus.on('afterValidation',async(obj)=>{if(obj.name==='active'&&obj.isValid){// do something}}); The event calls the validation of fields. Return: Example: onSimpleEventBus.emit('validation',fields); SeeSimpleEventBusfor more information.",
+      "images": []
+    },
+    {
+      "doc_id": "global-client-events_4e2c5fa6fef4",
+      "title": "Global Client Events",
+      "section_id": 3,
+      "heading": "afterLoadWidgets​",
+      "chunk_index": 1,
+      "chunk_text": "It is used in combination with the validation event.",
+      "images": []
+    },
+    {
+      "doc_id": "global-client-events_4e2c5fa6fef4",
+      "title": "Global Client Events",
+      "section_id": 3,
+      "heading": "afterLoadWidgets​",
+      "chunk_index": 2,
+      "chunk_text": "The event occurs when all widgets are loaded.",
+      "images": []
+    },
+    {
+      "doc_id": "global-client-events_4e2c5fa6fef4",
+      "title": "Global Client Events",
+      "section_id": 4,
+      "heading": "afterSaveEvent​",
+      "chunk_index": 0,
+      "chunk_text": "The event occurs after a form is saved. It is used in combination with the validation event.",
+      "images": []
+    },
+    {
+      "doc_id": "global-client-events_4e2c5fa6fef4",
+      "title": "Global Client Events",
+      "section_id": 4,
+      "heading": "afterSaveEvent​",
+      "chunk_index": 1,
+      "chunk_text": "Return: Object{\"payload\":{\"view\":\"Default\",\"tableName\":\"task\",\"recordId\":\"166307559406494736\",\"displayValue\":\"\"},\"result\":\"OK\"} Error{\"payload\":{\"errors\":[...]},\"result\":\"ERROR\"} Example: onSimpleEventBus.on('afterSaveEvent',async(obj)=>{constsavedRecordId=obj.payload.recordId;}); The event occurs after a form is saved and when the UI actions are returned. Return: Object{\"payload\":{\"view\":\"Default\",\"tableName\":\"task\",\"recordId\":\"166307559406494736\",\"displayValue\":\"\"},\"result\":\"OK\"} Error{\"payload\":{\"errors\":[...]},\"result\":\"ERROR\"} Example: onSimpleEventBus.on('afterSaveAndGetUiActionsEvent',async(obj)=>{constsavedRecordId=obj.payload.recordId;}); The event occurs after the widget field validation. Return: {name:'active',isValid:true,} Example: onSimpleEventBus.on('afterValidation',async(obj)=>{if(obj.name==='active'&&obj.isValid){// do something}}); The event calls the validation of fields. Return: Example: onSimpleEventBus.emit('validation',fields); SeeSimpleEventBusfor more information.",
+      "images": []
+    },
+    {
+      "doc_id": "global-client-events_4e2c5fa6fef4",
+      "title": "Global Client Events",
+      "section_id": 5,
+      "heading": "afterSaveAndGetUiActionsEvent​",
+      "chunk_index": 0,
+      "chunk_text": "The event occurs after a form is saved and when the UI actions are returned. Return: Object{\"payload\":{\"view\":\"Default\",\"tableName\":\"task\",\"recordId\":\"166307559406494736\",\"displayValue\":\"\"},\"result\":\"OK\"} Error{\"payload\":{\"errors\":[...]},\"result\":\"ERROR\"} Example: onSimpleEventBus.on('afterSaveAndGetUiActionsEvent',async(obj)=>{constsavedRecordId=obj.payload.recordId;}); The event occurs after the widget field validation. It is used in combination with the validation event. Return: {name:'active',isValid:true,} Example: onSimpleEventBus.on('afterValidation',async(obj)=>{if(obj.name==='active'&&obj.isValid){// do something}}); The event calls the validation of fields. Return: Example: onSimpleEventBus.emit('validation',fields); SeeSimpleEventBusfor more information.",
+      "images": []
+    },
+    {
+      "doc_id": "global-client-events_4e2c5fa6fef4",
+      "title": "Global Client Events",
+      "section_id": 6,
+      "heading": "afterValidation​",
+      "chunk_index": 0,
+      "chunk_text": "The event occurs after the widget field validation. It is used in combination with the validation event. Return: {name:'active',isValid:true,} Example: onSimpleEventBus.on('afterValidation',async(obj)=>{if(obj.name==='active'&&obj.isValid){// do something}}); The event calls the validation of fields. Return: Example: onSimpleEventBus.emit('validation',fields); SeeSimpleEventBusfor more information.",
+      "images": []
+    },
+    {
+      "doc_id": "global-client-events_4e2c5fa6fef4",
+      "title": "Global Client Events",
+      "section_id": 7,
+      "heading": "validation​",
+      "chunk_index": 0,
+      "chunk_text": "The event calls the validation of fields. Return: Example: onSimpleEventBus.emit('validation',fields); SeeSimpleEventBusfor more information.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-displaying_7d5c5ec232bb",
+      "title": "Widget Displaying",
+      "section_id": 1,
+      "heading": "Add a widget on a record form​",
+      "chunk_index": 0,
+      "chunk_text": "Forms can also include widgets. Before adding a widget to a form, configure it. To configure widget displaying, complete the steps below: Widget Instance form fields The new widget instance record appears in theRelated Listsarea of theWidgetrecord and thePortal Columnrecord forms. tipIf you have multiple instances of the same widget, adjust their options to distinguish between them. To determine whether a widget is shown on a record form, perform the following steps: noteAnother way to determine whether a widget is shown on  the record forms:Open theWidget Instancerecord you need.In theRelated Listsarea, select theUI Form Elementtab.TheForm Section.Form.Tablecolumn specifies the table.TheForm Section.Formcolumn defines the form layout name.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-displaying_7d5c5ec232bb",
+      "title": "Widget Displaying",
+      "section_id": 1,
+      "heading": "Add a widget on a record form​",
+      "chunk_index": 1,
+      "chunk_text": "To place a widget on a portal page, use theWidget Instances(sys_widget_instance) table. These elements define a specific location of widgets according to the portal column specified, and customize the widget options with the option schema. To define whether a widget is displayed on a portal page, complete the steps below: noteTo go to the page settings where a widget is located, complete the following steps:On theWidget Instancerecord form, open the relatedPage Columnrecord.On thePage Columnrecord form, open the relatedPage Rowrecord.On thePage Rowrecord form, open the relatedPage Containerrecord.On thePage Containerrecord form, open the relatedPagerecord.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-displaying_7d5c5ec232bb",
+      "title": "Widget Displaying",
+      "section_id": 1,
+      "heading": "Add a widget on a record form​",
+      "chunk_index": 2,
+      "chunk_text": "Forms display a set of fields of various types.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-displaying_7d5c5ec232bb",
+      "title": "Widget Displaying",
+      "section_id": 1,
+      "heading": "Add a widget on a record form​",
+      "chunk_index": 3,
+      "chunk_text": "For more information, see thePage Structurearticle.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-displaying_7d5c5ec232bb",
+      "title": "Widget Displaying",
+      "section_id": 1,
+      "heading": "Add a widget on a record form​",
+      "chunk_index": 4,
+      "chunk_text": "To do so, complete the following steps: noteFor example, you need to create a widget to be displayed on records of all child tables of theITSM Tasktable (Incidents,Change Requests,Problems, and so on).When creating a widget, specify theITSM Taskstable in theTablesfield and select theInheritancecheckbox. The widget will be displayed on records of theITSM Tasktable and its child tables.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-displaying_7d5c5ec232bb",
+      "title": "Widget Displaying",
+      "section_id": 2,
+      "heading": "Add a widget on a portal page​",
+      "chunk_index": 0,
+      "chunk_text": "To place a widget on a portal page, use theWidget Instances(sys_widget_instance) table. These elements define a specific location of widgets according to the portal column specified, and customize the widget options with the option schema. To configure widget displaying, complete the steps below: Widget Instance form fields The new widget instance record appears in theRelated Listsarea of theWidgetrecord and thePortal Columnrecord forms. To determine whether a widget is shown on a record form, perform the following steps: noteAnother way to determine whether a widget is shown on  the record forms:Open theWidget Instancerecord you need.In theRelated Listsarea, select theUI Form Elementtab.TheForm Section.Form.Tablecolumn specifies the table.TheForm Section.Formcolumn defines the form layout name. To define whether a widget is displayed on a portal page, complete the steps below: noteTo go to the page settings where a widget is located, complete the following steps:On theWidget Instancerecord form, open the relatedPage Columnrecord.On thePage Columnrecord form, open the relatedPage Rowrecord.On thePage Rowrecord form, open the relatedPage Containerrecord.On thePage Containerrecord form, open the relatedPagerecord.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-displaying_7d5c5ec232bb",
+      "title": "Widget Displaying",
+      "section_id": 2,
+      "heading": "Add a widget on a portal page​",
+      "chunk_index": 1,
+      "chunk_text": "For more information, see thePage Structurearticle.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-displaying_7d5c5ec232bb",
+      "title": "Widget Displaying",
+      "section_id": 2,
+      "heading": "Add a widget on a portal page​",
+      "chunk_index": 2,
+      "chunk_text": "tipIf you have multiple instances of the same widget, adjust their options to distinguish between them.",
+      "images": []
+    },
+    {
+      "doc_id": "widget-displaying_7d5c5ec232bb",
+      "title": "Widget Displaying",
+      "section_id": 3,
+      "heading": "Determine the location of a widget​",
+      "chunk_index": 0,
+      "chunk_text": "To determine whether a widget is shown on a record form, perform the following steps: noteAnother way to determine whether a widget is shown on  the record forms:Open theWidget Instancerecord you need.In theRelated Listsarea, select theUI Form Elementtab.TheForm Section.Form.Tablecolumn specifies the table.TheForm Section.Formcolumn defines the form layout name. To define whether a widget is displayed on a portal page, complete the steps below: noteTo go to the page settings where a widget is located, complete the following steps:On theWidget Instancerecord form, open the relatedPage Columnrecord.On thePage Columnrecord form, open the relatedPage Rowrecord.On thePage Rowrecord form, open the relatedPage Containerrecord.On thePage Containerrecord form, open the relatedPagerecord.",
+      "images": []
+    },
+    {
+      "doc_id": "_15c1acca1e39",
+      "title": "Available Widgets",
+      "section_id": 1,
+      "heading": "📄️Choice Timeline",
+      "chunk_index": 0,
+      "chunk_text": "Configure the widget to track task state durations",
+      "images": []
+    },
+    {
+      "doc_id": "_15c1acca1e39",
+      "title": "Available Widgets",
+      "section_id": 2,
+      "heading": "📄️Read Only Form",
+      "chunk_index": 0,
+      "chunk_text": "Display read-only information about the current record on the portal",
+      "images": []
+    },
+    {
+      "doc_id": "_15c1acca1e39",
+      "title": "Available Widgets",
+      "section_id": 3,
+      "heading": "📄️Summary",
+      "chunk_index": 0,
+      "chunk_text": "Display the summary of records on approval forms",
+      "images": []
+    },
+    {
+      "doc_id": "_15c1acca1e39",
+      "title": "Available Widgets",
+      "section_id": 4,
+      "heading": "📄️Static Record Information SA",
+      "chunk_index": 0,
+      "chunk_text": "Display read-only information from the current task record",
+      "images": []
+    },
+    {
+      "doc_id": "_15c1acca1e39",
+      "title": "Available Widgets",
+      "section_id": 5,
+      "heading": "📄️Static User Information SA",
+      "chunk_index": 0,
+      "chunk_text": "Display read-only information about the Caller",
+      "images": []
+    },
+    {
+      "doc_id": "_15c1acca1e39",
+      "title": "Available Widgets",
+      "section_id": 6,
+      "heading": "📄️View Task Readonly Form",
+      "chunk_index": 0,
+      "chunk_text": "Show read-only task information on the portal",
+      "images": []
+    },
+    {
+      "doc_id": "_15c1acca1e39",
+      "title": "Available Widgets",
+      "section_id": 7,
+      "heading": "📄️View Form Urgency Field Editor",
+      "chunk_index": 0,
+      "chunk_text": "Show ticket urgency editor on the portal",
+      "images": []
+    },
+    {
+      "doc_id": "_15c1acca1e39",
+      "title": "Available Widgets",
+      "section_id": 8,
+      "heading": "📄️SLA Indications SA",
+      "chunk_index": 0,
+      "chunk_text": "Visualize the time left till the nearest SLA breach time",
+      "images": []
+    },
+    {
+      "doc_id": "_15c1acca1e39",
+      "title": "Available Widgets",
+      "section_id": 9,
+      "heading": "📄️Global Attachments",
+      "chunk_index": 0,
+      "chunk_text": "Allow users to add and manage record attachments",
+      "images": []
+    },
+    {
+      "doc_id": "_15c1acca1e39",
+      "title": "Available Widgets",
+      "section_id": 10,
+      "heading": "📄️Active Approvals",
+      "chunk_index": 0,
+      "chunk_text": "Display approval tickets on the main page of the portal",
+      "images": []
+    },
+    {
+      "doc_id": "_15c1acca1e39",
+      "title": "Available Widgets",
+      "section_id": 11,
+      "heading": "📄️Image Carousel",
+      "chunk_index": 0,
+      "chunk_text": "Add an image carousel to the portal",
+      "images": []
+    },
+    {
+      "doc_id": "_15c1acca1e39",
+      "title": "Available Widgets",
+      "section_id": 12,
+      "heading": "📄️Portal Cards",
+      "chunk_index": 0,
+      "chunk_text": "Display cards with links to portal pages",
+      "images": []
+    },
+    {
+      "doc_id": "choice-timeline_dfba95dc6e02",
+      "title": "Choice Timeline",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 0,
+      "chunk_text": "The widget consists of the following elements:  The order of segments corresponds to the order in which state values changed. noteIf you do not configure the value of the widget options, the widget will have default settings:Widget title = Timeline.Choice column = State.Color = Default set of 21 colors. To configure the values of the widget options, complete the following steps: The options from the example display the following widget:  The widget is displayed only on the created records.",
+      "images": []
+    },
+    {
+      "doc_id": "choice-timeline_dfba95dc6e02",
+      "title": "Choice Timeline",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 1,
+      "chunk_text": "Below, the start and end times of this state are displayed. If the current state is the last segment,Nowis displayed instead of the end time.",
+      "images": []
+    },
+    {
+      "doc_id": "choice-timeline_dfba95dc6e02",
+      "title": "Choice Timeline",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 2,
+      "chunk_text": "The state change data is taken from theHistory(sys_history) table, the state data and state translations are taken from theChoice Options(sys_choice) table. noteIf there are option values in theHistory(sys_history) that are not in the option set for the current child of theTasktable, the widget looks for a matching set of the nearest parent of this table (if there is any).If there is no state in theChoice Options(sys_choice) for the current table, the widget accesses the parent table states.If there are no translations or the state itself, a value of the state fromsys_historyis displayed.",
+      "images": []
+    },
+    {
+      "doc_id": "choice-timeline_dfba95dc6e02",
+      "title": "Choice Timeline",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 3,
+      "chunk_text": "When all 21 colors are used in a widget, subsequent colors are randomly generated.",
+      "images": []
+    },
+    {
+      "doc_id": "choice-timeline_dfba95dc6e02",
+      "title": "Choice Timeline",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 4,
+      "chunk_text": "If the time is less than 1 minute,<1mis displayed.",
+      "images": []
+    },
+    {
+      "doc_id": "choice-timeline_dfba95dc6e02",
+      "title": "Choice Timeline",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 5,
+      "chunk_text": "Also, the width of the segment corresponds to the time spent in a certain state relative to the total time. When you move the pointer over a segment, a window appears, showing the state and the time spent in this state.",
+      "images": []
+    },
+    {
+      "doc_id": "choice-timeline_dfba95dc6e02",
+      "title": "Choice Timeline",
+      "section_id": 2,
+      "heading": "Configure the widget​",
+      "chunk_index": 0,
+      "chunk_text": "noteIf you do not configure the value of the widget options, the widget will have default settings:Widget title = Timeline.Choice column = State.Color = Default set of 21 colors. When all 21 colors are used in a widget, subsequent colors are randomly generated. To configure the values of the widget options, complete the following steps: The options from the example display the following widget:  The widget is displayed only on the created records. The state change data is taken from theHistory(sys_history) table, the state data and state translations are taken from theChoice Options(sys_choice) table. noteIf there are option values in theHistory(sys_history) that are not in the option set for the current child of theTasktable, the widget looks for a matching set of the nearest parent of this table (if there is any).If there is no state in theChoice Options(sys_choice) for the current table, the widget accesses the parent table states.If there are no translations or the state itself, a value of the state fromsys_historyis displayed.",
+      "images": []
+    },
+    {
+      "doc_id": "choice-timeline_dfba95dc6e02",
+      "title": "Choice Timeline",
+      "section_id": 3,
+      "heading": "Additional information​",
+      "chunk_index": 0,
+      "chunk_text": "The widget is displayed only on the created records. The state change data is taken from theHistory(sys_history) table, the state data and state translations are taken from theChoice Options(sys_choice) table. noteIf there are option values in theHistory(sys_history) that are not in the option set for the current child of theTasktable, the widget looks for a matching set of the nearest parent of this table (if there is any).If there is no state in theChoice Options(sys_choice) for the current table, the widget accesses the parent table states.If there are no translations or the state itself, a value of the state fromsys_historyis displayed.",
+      "images": []
+    },
+    {
+      "doc_id": "read-only-form_3c7329f73771",
+      "title": "Read Only Form",
+      "section_id": 1,
+      "heading": "Configure the widget​",
+      "chunk_index": 0,
+      "chunk_text": "To configure the values of the widget options, complete the following steps: is displayed on the portal the following way:",
+      "images": []
+    },
+    {
+      "doc_id": "summary_5ec93491a23f",
+      "title": "Summary",
+      "section_id": 1,
+      "heading": "Configure the widget​",
+      "chunk_index": 0,
+      "chunk_text": "cautionIf there is no value in theConfigure the value of the widget optionsfield, the widget is not displayed. To configure the values of the widget options, complete the following steps:",
+      "images": []
+    },
+    {
+      "doc_id": "record-information_8ab103f17635",
+      "title": "Static Record Information SA",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 0,
+      "chunk_text": "The fields displayed in theStatic Record Information SAwidget are organized into rows and columns. The rows can have different number of columns. Each row, regardless of the number of the columns it has, takes the full width of the widget.",
+      "images": []
+    },
+    {
+      "doc_id": "record-information_8ab103f17635",
+      "title": "Static Record Information SA",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 1,
+      "chunk_text": "If a field has no value, thenot setplaceholder is displayed in the corresponding column.",
+      "images": []
+    },
+    {
+      "doc_id": "record-information_8ab103f17635",
+      "title": "Static Record Information SA",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 2,
+      "chunk_text": "You can change the display order of widgets and fields using the form view customization functionality. To configure the values of the widgetoptions, complete the following steps: As a result, the widget has: TheState,PriorityandDue datefields will be colored according to the column style rules.",
+      "images": []
+    },
+    {
+      "doc_id": "record-information_8ab103f17635",
+      "title": "Static Record Information SA",
+      "section_id": 2,
+      "heading": "Configure the widget​",
+      "chunk_index": 0,
+      "chunk_text": "The fields displayed in theStatic Record Information SAwidget are organized into rows and columns. The rows can have different number of columns. Each row, regardless of the number of the columns it has, takes the full width of the widget. If a field has no value, thenot setplaceholder is displayed in the corresponding column. To configure the values of the widgetoptions, complete the following steps: As a result, the widget has: TheState,PriorityandDue datefields will be colored according to the column style rules.",
+      "images": []
+    },
+    {
+      "doc_id": "user-information_554a85224e23",
+      "title": "Static User Information SA",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 0,
+      "chunk_text": "If the caller was removed from the system, the widget takes the following view:  The fields displayed in theStatic User Information SAwidget are organized into rows and columns. The rows can have different number of columns. Each row, regardless of the number of the columns it has, takes the full width of the widget. If a field has no value, thenot setplaceholder is displayed in the corresponding column. To configure the value of the widget options, complete the following steps: As a result, the widget has:",
+      "images": []
+    },
+    {
+      "doc_id": "user-information_554a85224e23",
+      "title": "Static User Information SA",
+      "section_id": 2,
+      "heading": "Configure the widget​",
+      "chunk_index": 0,
+      "chunk_text": "The fields displayed in theStatic User Information SAwidget are organized into rows and columns. The rows can have different number of columns. Each row, regardless of the number of the columns it has, takes the full width of the widget. If a field has no value, thenot setplaceholder is displayed in the corresponding column. To configure the value of the widget options, complete the following steps: As a result, the widget has:",
+      "images": []
+    },
+    {
+      "doc_id": "view-task-read-only-form_1b70b36d7141",
+      "title": "View Task Readonly Form",
+      "section_id": 1,
+      "heading": "Configure the widget​",
+      "chunk_index": 0,
+      "chunk_text": "The widget consists of two sections: Find more information in theRecord Extended Modelarticle.",
+      "images": []
+    },
+    {
+      "doc_id": "urgency-widget_4488f4469ba5",
+      "title": "View Form Urgency Field Editor",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 0,
+      "chunk_text": "ClickChangeto set a new value for the ticket urgency. If theVery highoption is selected, a warning message appears:  Specify the phone number in the system propertyitsm.notification.contact.phone. To configure the value of the widget options, complete the following steps:",
+      "images": []
+    },
+    {
+      "doc_id": "urgency-widget_4488f4469ba5",
+      "title": "View Form Urgency Field Editor",
+      "section_id": 2,
+      "heading": "Configure the widget​",
+      "chunk_index": 0,
+      "chunk_text": "To configure the value of the widget options, complete the following steps:",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 0,
+      "chunk_text": "You can set up the number of indications displayed in the widget and specify the minimal height of the widget in pixels. Notably, the minimal height cannot be less than the height of displayed elements.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 1,
+      "chunk_text": "The widget consists of the following elements:  The color of the text and capsular counter illustrates the current state of the indication: noteIf the record has a breached SLA indication, the widget displays the date and time of the expired indication until it is completed or canceled. To configure the values of the widget options, complete the following steps: To set up an indicator, perform the following steps: When theStart Conditionsare met, a new record is created automatically in theIndicationtable and theSLA Indications SAwidget starts displaying the indication.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 2,
+      "chunk_text": "noteBusiness time – the values of theBusiness time elapsed(business_elapsed_time),Business time left(business_left_time), andBusiness time elapsed in %(business_elapsed_percentage) columns.Actual time – the values of theActual time elapsed(actual_elapsed_time),Actual time left(actual_left_time), andActual time elapsed in %(actual_elapsed_percentage) columns.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 3,
+      "chunk_text": "Alternatively, edit the value of theSchema option valuesfield in the correspondingWidget Instancerecord.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 4,
+      "chunk_text": "To display data about SLA breach time, the following should be configured: By default,business timeis used to display in the widget.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 5,
+      "chunk_text": "TheSLA Indications SAwidget can be added to the tables extended from theITSM Task(itsm_task) table.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 6,
+      "chunk_text": "Deadlines of other indications are ignored.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 7,
+      "chunk_text": "In the screenshot above, the indication namedIncident resolution timeis expired, so you see the elapsed time.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 8,
+      "chunk_text": "To useactual time, enter{\"time\": \"actual\"}in theConfigure the value of the widget optionsmodal window when adding the widget to a form.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 9,
+      "chunk_text": "By default, they are not displayed on the form.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 2,
+      "heading": "Displayed information​",
+      "chunk_index": 0,
+      "chunk_text": "You can set up the number of indications displayed in the widget and specify the minimal height of the widget in pixels. Notably, the minimal height cannot be less than the height of displayed elements.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 2,
+      "heading": "Displayed information​",
+      "chunk_index": 1,
+      "chunk_text": "To configure the values of the widget options, complete the following steps: To set up an indicator, perform the following steps: When theStart Conditionsare met, a new record is created automatically in theIndicationtable and theSLA Indications SAwidget starts displaying the indication.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 2,
+      "heading": "Displayed information​",
+      "chunk_index": 2,
+      "chunk_text": "noteBusiness time – the values of theBusiness time elapsed(business_elapsed_time),Business time left(business_left_time), andBusiness time elapsed in %(business_elapsed_percentage) columns.Actual time – the values of theActual time elapsed(actual_elapsed_time),Actual time left(actual_left_time), andActual time elapsed in %(actual_elapsed_percentage) columns.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 2,
+      "heading": "Displayed information​",
+      "chunk_index": 3,
+      "chunk_text": "Alternatively, edit the value of theSchema option valuesfield in the correspondingWidget Instancerecord.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 2,
+      "heading": "Displayed information​",
+      "chunk_index": 4,
+      "chunk_text": "TheSLA Indications SAwidget can be added to the tables extended from theITSM Task(itsm_task) table.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 2,
+      "heading": "Displayed information​",
+      "chunk_index": 5,
+      "chunk_text": "To useactual time, enter{\"time\": \"actual\"}in theConfigure the value of the widget optionsmodal window when adding the widget to a form.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 2,
+      "heading": "Displayed information​",
+      "chunk_index": 6,
+      "chunk_text": "To display data about SLA breach time, the following should be configured: By default,business timeis used to display in the widget.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 2,
+      "heading": "Displayed information​",
+      "chunk_index": 7,
+      "chunk_text": "By default, they are not displayed on the form.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 3,
+      "heading": "Configure the widget​",
+      "chunk_index": 0,
+      "chunk_text": "You can set up the number of indications displayed in the widget and specify the minimal height of the widget in pixels. Notably, the minimal height cannot be less than the height of displayed elements.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 3,
+      "heading": "Configure the widget​",
+      "chunk_index": 1,
+      "chunk_text": "To configure the values of the widget options, complete the following steps: To set up an indicator, perform the following steps: When theStart Conditionsare met, a new record is created automatically in theIndicationtable and theSLA Indications SAwidget starts displaying the indication.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 3,
+      "heading": "Configure the widget​",
+      "chunk_index": 2,
+      "chunk_text": "noteBusiness time – the values of theBusiness time elapsed(business_elapsed_time),Business time left(business_left_time), andBusiness time elapsed in %(business_elapsed_percentage) columns.Actual time – the values of theActual time elapsed(actual_elapsed_time),Actual time left(actual_left_time), andActual time elapsed in %(actual_elapsed_percentage) columns.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 3,
+      "heading": "Configure the widget​",
+      "chunk_index": 3,
+      "chunk_text": "Alternatively, edit the value of theSchema option valuesfield in the correspondingWidget Instancerecord.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 3,
+      "heading": "Configure the widget​",
+      "chunk_index": 4,
+      "chunk_text": "TheSLA Indications SAwidget can be added to the tables extended from theITSM Task(itsm_task) table.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 3,
+      "heading": "Configure the widget​",
+      "chunk_index": 5,
+      "chunk_text": "To useactual time, enter{\"time\": \"actual\"}in theConfigure the value of the widget optionsmodal window when adding the widget to a form.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 3,
+      "heading": "Configure the widget​",
+      "chunk_index": 6,
+      "chunk_text": "To display data about SLA breach time, the following should be configured: By default,business timeis used to display in the widget.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 3,
+      "heading": "Configure the widget​",
+      "chunk_index": 7,
+      "chunk_text": "By default, they are not displayed on the form.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 4,
+      "heading": "Configure the widget options​",
+      "chunk_index": 0,
+      "chunk_text": "You can set up the number of indications displayed in the widget and specify the minimal height of the widget in pixels. Notably, the minimal height cannot be less than the height of displayed elements. To configure the values of the widget options, complete the following steps: To set up an indicator, perform the following steps: When theStart Conditionsare met, a new record is created automatically in theIndicationtable and theSLA Indications SAwidget starts displaying the indication.",
+      "images": []
+    },
+    {
+      "doc_id": "sla-indication-widget_ee7a8db3937f",
+      "title": "SLA Indications SA",
+      "section_id": 5,
+      "heading": "Set up indicators​",
+      "chunk_index": 0,
+      "chunk_text": "To set up an indicator, perform the following steps: When theStart Conditionsare met, a new record is created automatically in theIndicationtable and theSLA Indications SAwidget starts displaying the indication.",
+      "images": []
+    },
+    {
+      "doc_id": "global-attachments_6bffb164ca18",
+      "title": "Global Attachments",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 0,
+      "chunk_text": "The widget appearance and available elements depend on the widget configuration and whether there are files attached to the record. To configure the values of the widget options, complete the following steps:",
+      "images": []
+    },
+    {
+      "doc_id": "global-attachments_6bffb164ca18",
+      "title": "Global Attachments",
+      "section_id": 1,
+      "heading": "Widget interface​",
+      "chunk_index": 1,
+      "chunk_text": "No files attachedSome files attachedRead-onlyRead-only, no files attachedAvailable elements:Drag filesarea.Upload button. The button opens the system file manager and allows users to select files to upload.Attachment windowbutton.Available elements:Drag filesarea.Upload button. The button opens the system file manager and allows users to select files to upload.Quick access list. The list contains last three uploaded files.DownloadandDeleteactions for each file.Attachment windowbutton.The number of files attached.Available elements:Quick access list. The list contains last three uploaded files.Downloadaction for each file.Attachment windowbutton.The number of files attached.",
+      "images": []
+    },
+    {
+      "doc_id": "global-attachments_6bffb164ca18",
+      "title": "Global Attachments",
+      "section_id": 2,
+      "heading": "Configure the widget​",
+      "chunk_index": 0,
+      "chunk_text": "To configure the values of the widget options, complete the following steps:",
+      "images": []
+    },
+    {
+      "doc_id": "active-approvals_552ede93117e",
+      "title": "Active Approvals widget",
+      "section_id": 1,
+      "heading": "Displaying active approvals on the portal​",
+      "chunk_index": 0,
+      "chunk_text": "The \"out of the box\" Simple Application has noActive approvalswidget on the main page of the portal. To place it on the main page, do the following: If everything is done correctly, the widget will be displayed on the portal for users who have assigned approval tasks. For more information about creating and customizing pages, see thePage Structurearticle.",
+      "images": []
+    },
+    {
+      "doc_id": "image-carousel_b28384a25bdc",
+      "title": "Image Carousel",
+      "section_id": 1,
+      "heading": "Upload banners​",
+      "chunk_index": 0,
+      "chunk_text": "To upload a banner, complete the following steps: Carousel Image form fields After adding the widget to the portal, you can continue to add and delete images from theCarousel Imagetable, and the banners will be displayed in the widget or deleted from it. tipRole required:admin. By default, the widget is not added to the portal. To dispaly it, complete the following steps:  Mobile version of the widget:  The users can switch the banners by: If automatic scrolling is enabled, it works in both desktop and mobile versions.",
+      "images": []
+    },
+    {
+      "doc_id": "image-carousel_b28384a25bdc",
+      "title": "Image Carousel",
+      "section_id": 2,
+      "heading": "Add widget to portal​",
+      "chunk_index": 0,
+      "chunk_text": "tipRole required:admin. By default, the widget is not added to the portal. To dispaly it, complete the following steps:  Mobile version of the widget:  The users can switch the banners by: If automatic scrolling is enabled, it works in both desktop and mobile versions.",
+      "images": []
+    },
+    {
+      "doc_id": "image-carousel_b28384a25bdc",
+      "title": "Image Carousel",
+      "section_id": 3,
+      "heading": "Widget interface​",
+      "chunk_index": 0,
+      "chunk_text": "Mobile version of the widget:  The users can switch the banners by: If automatic scrolling is enabled, it works in both desktop and mobile versions.",
+      "images": []
+    },
+    {
+      "doc_id": "portal-cards_3fbddfacb851",
+      "title": "Portal Cards",
+      "section_id": 1,
+      "heading": "Configure the widget​",
+      "chunk_index": 0,
+      "chunk_text": "To configure the values of the widget options, complete the following steps: Available options: Configure the value of the widget options{\"cardsStructure\":\"portal\",\"isShowImage\":true,\"orientation\":\"left\",\"collapseOptions\":{\"mobileCountRow\":3,\"tabletCountRow\":2,\"desktopCountRow\":2},\"isShowDescription\":true} To create a card, do the following: Portal Card form fields",
+      "images": []
+    },
+    {
+      "doc_id": "portal-cards_3fbddfacb851",
+      "title": "Portal Cards",
+      "section_id": 2,
+      "heading": "Create cards on the portal​",
+      "chunk_index": 0,
+      "chunk_text": "To create a card, do the following: Portal Card form fields",
+      "images": []
+    }
+  ]
+}
