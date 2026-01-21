@@ -14,4 +14,4 @@ run:
 	python -m rag.rag_main
 
 ui:
-	streamlit run streamlit_app.py
+    streamlit run streamlit_app.py
