@@ -1,7 +1,9 @@
 scikit-learn
 nltk
 langchain>=0.1.13
+langchain-core
 langchain-community>=0.0.10
+langchain-classic
 langchain-groq
 langchain-huggingface
 faiss-cpu

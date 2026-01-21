@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import List
 import json
-from langchain.schema import Document
+from langchain_core.documents import Document
 
 
 def load_chunks(*paths: str) -> List[Document]:

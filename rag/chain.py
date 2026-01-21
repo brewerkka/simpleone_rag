@@ -1,6 +1,6 @@
 import os
 import logging
-from langchain.chains import RetrievalQA
+from langchain_classic.chains import RetrievalQA
 from langchain_groq import ChatGroq
 from .vectorstore import load_vectorstore
 from .config_validator import load_and_validate_config
