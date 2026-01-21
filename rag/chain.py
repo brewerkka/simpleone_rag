@@ -1,26 +1,33 @@
 import os
-import yaml
-from pathlib import Path
+import logging
 from langchain.chains import RetrievalQA
 from langchain_groq import ChatGroq
 from .vectorstore import load_vectorstore
+from .config_validator import load_and_validate_config
 
-CONFIG_PATH = Path(__file__).parent.parent / "config.yaml"
-_cfg = yaml.safe_load(CONFIG_PATH.read_text(encoding="utf-8"))
+logger = logging.getLogger(__name__)
 
 
 def build_rag_chain() -> RetrievalQA:
+    """Создает RAG цепочку с валидированной конфигурацией."""
+    cfg = load_and_validate_config()
 
+    logger.info("Загрузка векторного хранилища...")
     vs = load_vectorstore(
-        path=_cfg["vectorstore"]["path"], model_name=_cfg["vectorstore"]["model"]
+        path=cfg["vectorstore"]["path"], model_name=cfg["vectorstore"]["model"]
     )
-    retriever = vs.as_retriever(search_kwargs={"k": _cfg["retrieval"]["k"]})
-    api_key = os.getenv(_cfg["llm"]["api_key_env"])
+    
+    retriever = vs.as_retriever(search_kwargs={"k": cfg["retrieval"]["k"]})
+    
+    api_key = os.getenv(cfg["llm"]["api_key_env"])
     if not api_key:
         raise EnvironmentError(
-            f"Не задана переменная окружения {_cfg['llm']['api_key_env']}"
+            f"Не задана переменная окружения {cfg['llm']['api_key_env']}"
         )
-    llm = ChatGroq(model=_cfg["llm"]["model"], groq_api_key=api_key)
+    
+    logger.info(f"Инициализация LLM: {cfg['llm']['model']}")
+    llm = ChatGroq(model=cfg["llm"]["model"], groq_api_key=api_key)
+    
     return RetrievalQA.from_chain_type(
         llm=llm, retriever=retriever, return_source_documents=True
     )

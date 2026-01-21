@@ -1,4 +1,6 @@
 import json
+import logging
+import yaml
 from pathlib import Path
 from sentence_transformers import SentenceTransformer
 from sklearn.cluster import AgglomerativeClustering
@@ -11,7 +13,9 @@ import numpy as np
 warnings.filterwarnings("ignore", category=FutureWarning)
 nltk.download("punkt_tab", quiet=True)
 
-DISTANCE_THRESHOLD = 1.0
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
 LINKAGE = "average"
 embedder = SentenceTransformer("all-MiniLM-L6-v2")
 
@@ -19,8 +23,11 @@ embedder = SentenceTransformer("all-MiniLM-L6-v2")
 def semantic_chunk(
     text: str,
     target_sent_count: int = 5,
-    distance_threshold: float = DISTANCE_THRESHOLD,
+    distance_threshold: float = 1.0,
+    min_words: int = 10,
+    max_words: int = 150,
 ):
+    """Разбивает текст на семантические чанки."""
     sents = sent_tokenize(text)
     if len(sents) <= target_sent_count:
         return [" ".join(sents)]
@@ -44,18 +51,25 @@ def semantic_chunk(
 
         for i in range(0, len(cluster_sents), target_sent_count):
             chunk = " ".join(cluster_sents[i : i + target_sent_count])
-            if len(chunk.split()) < 10 or len(chunk.split()) > 150:
+            word_count = len(chunk.split())
+            if word_count < min_words or word_count > max_words:
                 continue
             chunks.append(chunk)
 
     return chunks
 
 
-def main():
-    SRC_PATH = Path("test/ru_server_side_api.json")
-    OUT_PATH = Path("test/server_chunks.json")
+def process_file(
+    src_path: Path,
+    out_path: Path,
+    chunking_config: dict,
+):
+    """Обрабатывает один JSON файл и создает чанки."""
+    if not src_path.exists():
+        raise FileNotFoundError(f"Исходный файл не найден: {src_path}")
 
-    with open(SRC_PATH, "r", encoding="utf-8") as f:
+    logger.info(f"Обработка файла: {src_path}")
+    with open(src_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     all_chunks = []
@@ -69,7 +83,7 @@ def main():
         for section in doc.get("sections", [])
     )
     for doc, section in tqdm(
-        section_iter, total=total_sections, desc="processing sections"
+        section_iter, total=total_sections, desc=f"Обработка {src_path.name}"
     ):
         doc_id = doc.get("id")
         title = doc.get("title")
@@ -79,7 +93,13 @@ def main():
         if not text:
             continue
 
-        chunks = semantic_chunk(text)
+        chunks = semantic_chunk(
+            text,
+            target_sent_count=chunking_config.get("target_sent_count", 5),
+            distance_threshold=chunking_config.get("distance_threshold", 1.0),
+            min_words=chunking_config.get("min_words", 10),
+            max_words=chunking_config.get("max_words", 150),
+        )
         for idx, chunk in enumerate(chunks):
             all_chunks.append(
                 {
@@ -95,10 +115,48 @@ def main():
                 }
             )
 
-    with open(OUT_PATH, "w", encoding="utf-8") as f:
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(out_path, "w", encoding="utf-8") as f:
         json.dump({"chunks": all_chunks}, f, ensure_ascii=False, indent=2)
 
-    print(f"{len(all_chunks)} chunks and saved to {OUT_PATH}")
+    logger.info(f"Создано {len(all_chunks)} чанков, сохранено в {out_path}")
+    return len(all_chunks)
+
+
+def main():
+    """Главная функция для обработки всех файлов из конфигурации."""
+    config_path = Path(__file__).parent.parent / "config.yaml"
+    if not config_path.exists():
+        raise FileNotFoundError(f"Файл конфигурации не найден: {config_path}")
+
+    cfg = yaml.safe_load(config_path.read_text(encoding="utf-8"))
+    source_data = cfg.get("source_data", {})
+    chunking_config = cfg.get("chunking", {})
+
+    # Маппинг исходных файлов на выходные
+    file_mapping = {
+        "client_side_api": "chunks/client_chunks.json",
+        "server_side_api": "chunks/server_chunks.json",
+        "widgets_side_api": "chunks/widgets_chunks.json",
+    }
+
+    total_chunks = 0
+    for key, output_file in file_mapping.items():
+        if key not in source_data:
+            logger.warning(f"Пропущен ключ {key} в конфигурации")
+            continue
+
+        src_path = Path(source_data[key])
+        out_path = Path(output_file)
+
+        try:
+            chunks_count = process_file(src_path, out_path, chunking_config)
+            total_chunks += chunks_count
+        except Exception as e:
+            logger.error(f"Ошибка при обработке {key}: {e}")
+            raise
+
+    logger.info(f"Всего создано {total_chunks} чанков из {len(file_mapping)} файлов")
 
 
 if __name__ == "__main__":

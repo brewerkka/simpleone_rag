@@ -1,8 +1,7 @@
-
 scikit-learn
 nltk
 langchain>=0.1.13
-langchain-community
+langchain-community>=0.0.10
 langchain-groq
 langchain-huggingface
 faiss-cpu
@@ -10,5 +9,4 @@ sentence-transformers
 python-dotenv
 tqdm
 streamlit>=1.28.0
-langchain>=0.0.350
-langchain-community>=0.0.10
+pyyaml

@@ -1,12 +1,32 @@
+# Пути к исходным данным для обработки (используются chunker.py)
+source_data:
+  client_side_api: data_simpleone/client_side_api.json
+  server_side_api: test/ru_server_side_api.json
+  widgets_side_api: test/ru_widgets.json
+
+# Пути к обработанным чанкам (используются для построения индекса)
 paths:
   - chunks/client_chunks.json
   - chunks/server_chunks.json
   - chunks/widgets_chunks.json
+
+# Настройки векторного хранилища
 vectorstore:
   path: vectorstore/faiss_index
   model: all-MiniLM-L6-v2
+
+# Настройки LLM
 llm:
   model: llama-3.1-8b-instant
   api_key_env: GROQ_API_KEY
+
+# Настройки поиска
 retrieval:
   k: 5
+
+# Настройки чанкинга
+chunking:
+  target_sent_count: 5
+  distance_threshold: 1.0
+  min_words: 10
+  max_words: 150
